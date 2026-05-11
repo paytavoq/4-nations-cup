@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;600;700;800&family=Inter:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #001a33;
+  --color-primary-container: #002f56;
+  --color-on-primary-container: #7598c4;
+  --color-secondary: #bc0009;
+  --color-secondary-container: #e90b12;
+  --color-tertiary: #745b00;
+  --color-tertiary-container: #d0a600;
+  --color-surface: #f9f9fc;
+  --color-surface-container: #eeeef0;
+  --color-surface-container-low: #f3f3f6;
+  --color-surface-container-high: #e8e8ea;
+  --color-surface-container-highest: #e2e2e5;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1a1c1e;
+  --color-on-surface-variant: #43474e;
+  --color-outline: #73777f;
+  --color-outline-variant: #c3c6cf;
+  
+  --font-anybody: "Anybody", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --spacing-section-gap: 80px;
+  --spacing-container-max: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 40px;
+}
+
+@layer base {
+  body {
+    @apply font-inter bg-surface text-on-surface;
+  }
+}
+
+.font-anybody {
+  font-family: var(--font-anybody);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
